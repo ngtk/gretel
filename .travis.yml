@@ -12,5 +12,7 @@ gemfile:
   - gemfiles/Gemfile-rails.4.1.x
 before_script:
   - "cd test/dummy; rake db:migrate; rake db:test:prepare; cd ../.."
+script:
+  - "rake test --trace"
 notifications:
   email: false
